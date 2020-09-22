@@ -1,12 +1,21 @@
 @import '@concisecss/core';
 
-body {
+#container {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: [first] 50% [second] 50%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "content visual";
 }
 
-.second {
-    grid-column-start: 2;
-    grid-row-start: 1;
+.content {
+    grid-area: content;
+}
+
+.content>h1 {
+    text-align: center;
+}
+
+.visual {
+    grid-area: visual;
 }
