@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@concisecss/core": "github:ConciseCSS/core#master",
     "css-loader": "^4.3.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.2",

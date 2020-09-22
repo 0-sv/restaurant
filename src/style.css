@@ -1,4 +1,12 @@
+@import '@concisecss/core';
+
 body {
-    color: white;
-    background-color: black;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [first] 50% [second] 50%;
+}
+
+.second {
+    grid-column-start: 2;
+    grid-row-start: 1;
 }
