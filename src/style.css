@@ -1,11 +1,25 @@
-@import '@concisecss/core';
+@import 'koochak/dist/koochak.min.css';
 
-#container {
+:root {
+    --beige: #e7dec8;
+    --brown: #cbaf87;
+    --grey: #7e8a97;
+    --blue: #30475e;
+}
+
+.grid {
     display: grid;
-    grid-gap: 10px;
+    margin: 50px;
+    grid-gap: 1rem;
     grid-template-columns: 60% 40%;
     grid-template-areas: 
-    "content visual";
+    "content visual"
+}
+
+img {
+    display: block;
+    height: 100%; 
+    width: 100%;
 }
 
 .content {
