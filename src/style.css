@@ -7,13 +7,35 @@
     --blue: #30475e;
 }
 
+body {
+    background-color: var(--beige);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 .grid {
     display: grid;
     margin: 50px;
     grid-gap: 1rem;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 10% 60% 30%;
+    grid-template-rows: auto 25px;
     grid-template-areas: 
-    "content visual"
+    "nav content visual"
+    "footer footer visual";
+}
+
+.grid>div, div>img {
+    border-radius: 15px;
+    border-radius: 15px;
+}
+
+.nav {
+    background-color: var(--grey);
+    grid-area: nav;
 }
 
 img {
@@ -23,13 +45,19 @@ img {
 }
 
 .content {
+    background-color: var(--brown);
     grid-area: content;
-}
-
-.content>h1 {
-    text-align: center;
 }
 
 .visual {
     grid-area: visual;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--brown);
+}
+
+h1,p {
+    text-align: center;
 }
