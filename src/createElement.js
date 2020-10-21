@@ -4,6 +4,11 @@ const createElement = (type, text) => {
     return newElement;
 }
 
+const appendDiv = (div, element) => {
+    div.appendChild(element);
+}
+
 export {
-    createElement
+    createElement,
+    appendDiv
 }

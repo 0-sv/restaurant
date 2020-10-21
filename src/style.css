@@ -54,7 +54,7 @@ img {
     object-fit: cover;
 }
 
-.content {
+#content {
     background-color: var(--brown);
     grid-area: content;
 }
