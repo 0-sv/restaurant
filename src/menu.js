@@ -1,9 +1,9 @@
 import { createElement, appendDiv, clearDiv } from './createElement';
 
-const home = () => {
+const menu = () => {
     const content = document.getElementById("content");
     clearDiv(content);
-    appendDiv(content, createElement("h1", "Nhà xúc xich - home"));
+    appendDiv(content, createElement("h1", "Nhà xúc xich - menu"));
     appendDiv(content, createElement("p",`
                     Lorem, ipsum dolor sit amet
                     consectetur adipisicing elit. Neque,
@@ -14,5 +14,5 @@ const home = () => {
 };
 
 export {
-    home
+    menu
 }

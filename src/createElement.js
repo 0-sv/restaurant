@@ -8,7 +8,12 @@ const appendDiv = (div, element) => {
     div.appendChild(element);
 }
 
+const clearDiv = (div) => {
+    div.innerHTML = "";
+}
+
 export {
     createElement,
-    appendDiv
+    appendDiv,
+    clearDiv
 }
